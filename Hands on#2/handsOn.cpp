@@ -32,7 +32,7 @@ int main()
     cout << left << setw(val1) << "Cell Devices" << setprecision(2) << setw(val2) << right << att << endl;
     cout << left << setw(val1) << "Water" << setprecision(2) << right << setw(val2) << water << endl;
     cout << right << setw(val1 + val2) << "-------------" << endl;//set this output to right, no str value on left
-    cout << left << setw(val1) << "Total" << setprecision(2) << right << setw(val2) << total << endl;
+    cout << left << setw(val1) << "Total" << setprecision(2) << right << setw(val2) << total  << endl;
 
     return 0;
 }

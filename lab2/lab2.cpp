@@ -9,7 +9,7 @@ using namespace std;
 
 int main()
 {
-    //use double for price value vars
+    //declear unit prices double for price value vars
     double pen = 65.50,
     bag = 311.47,
     earbuds = 52.20,
