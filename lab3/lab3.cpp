@@ -12,34 +12,24 @@ All the tables in classrooms AT 204, 205, 311, & 312 were replaced with 24 X 72 
 Macs were replaced with Apple iMac (24-inch, Apple M1 chip with 8‑core CPU and 7‑core GPU, 8GB RAM, 256GB) iMac (24-inch) at a cost of $1299 each.
 Also some replacement Dell Keyboards at $18.30 each and some Dell Mouses at $16.45 each were ordered.
 
-Input
 
-Prompt the user and input for the quantity of each product ordered.
-
-Sample run showing input from user:
-How many 24 x 72 inch tables ordered? 120
-How many Dell All-in-One Thin Clients ordered? 351
-How many Apple iMac computers? 26
-How many Dell Keyboards ordered? 12
-How many Dell mouses ordered? 5
 
 Calculations/Processing
 
 Calculate the subtotal for each item. Catculate and the subtotal of the bill and the tax on this subtotal. Last calculate the total of subtotal plus tax.
 
-Output:
-Sample output
 
-QTY  Description                  Unit Price      Total Price
-120  TABLES 24 X 72 INCH             429.88         51585.60
-351  DELL ALL-IN-ONE THIN CLIENTS   1001.00        351351.00
- 26  APPLE iMac 24-inch             1299.00         33774.00
- 12  DELL KEYBOARD                    18.30           219.60
-  5  DELL MOUSE                       16.45            82.25                
+1) Include name, e-mail, and lab# as comments in code and include code to output this information to the output.
 
-                    SUBTOTAL      430012.45
-                         TAX       39899.24
-                       TOTAL      476911.69
+2) Minimum of five (5) comments in main()
+
+3) Use a defined constant for the tax rate 9.13% currently for Cupertino CA
+
+4) Use a memory constant for each unit price
+
+5) Output must be formatted exactly as above with decimal points lined up.
+
+
 
 =================================================================*/
 
@@ -52,49 +42,106 @@ using namespace std;
 
 int main()
 {
-    //use double for price value vars
-    double totalSum, //pre tax price,
+    //declear constant double for unit prices 
+    const double computers = 1001,
+    tables = 429.88,
+    macs = 1299,
+    keyboards = 18.30,
+    mouses = 16.45;
+
+    //use double for price value 
+    double computerTotal, 
+    tabelTotal,
+    macTotal,
+    keyboardTotal,
+    mouseTotal,
+    subTotal, //pre tax price,
     tax, // price after tax
     total;
-    //declear constant double for unit prices 
-    const double pen = 65.50,
-    bag = 311.47,
-    earbuds = 52.20;
     
-    //store the date in this string var
-    string date = "";
     //use int for capturing units for each product
-    int people, totalPens, totalBags, totalEarbuds;
+    int computerUnits, 
+    tabelUnits,
+    macUnits,
+    keyboardUnits,
+    mouseUnits;
+
+    /*
+    Input
+    Prompt the user and input for the quantity of each product ordered.
+    Sample run showing input from user:
+    How many 24 x 72 inch tables ordered? 120
+    How many Dell All-in-One Thin Clients ordered? 351
+    How many Apple iMac computers? 26
+    How many Dell Keyboards ordered? 12
+    How many Dell mouses ordered? 5
+    */
+   
+    //Capture unit numbers and sttore the value in the correct var
+    cout << "How many 24 x 72 inch tables ordered?: ";
+    cin >> tabelUnits;
+    cout << "How many Dell All-in-One Thin Clients ordered?: ";
+    cin >> computerUnits;
+    cout << "How many Apple iMac computers?: ";
+    cin >> macUnits;
+    cout << "How many Dell Keyboards ordered?: ";
+    cin >> keyboardUnits;
+    cout << "How many Dell mouses ordered?: ";
+    cin >> mouseUnits;
 
 
-    // Input width of the yard
-    cout << "Enter Number of RSVPs received: ";
-    cin >> people;
 
-    // totalPens = (people + 50 - 1) / 50;
-    // totalBags = (people + 125  - 1) / 125 ;
-    // totalEarbuds = (people + 30  - 1) / 30 ;
+    //store the total price by multiplying unit value and unit prices
+    computerTotal = computerUnits * computers;
+    tabelTotal = tabelUnits * tables;
+    macTotal = macUnits * macs;
+    keyboardTotal = keyboardUnits * keyboards;
+    mouseTotal = mouseUnits * mouses;
 
-    // double penPrice = totalPens * pen;
-    // double bagPrice = totalBags * bag;
-    // double earbudsPrice = totalEarbuds * earbuds;
+    //pre tax price for the total units of products ordered
+    subTotal = computerTotal + tabelTotal + macTotal + keyboardTotal +mouseTotal;
 
-    // totalSum = penPrice + bagPrice + earbudsPrice;
-    tax = totalSum * TAX_RATE;
-    total = totalSum + tax;
+    //calculate the tax rate
+    tax = subTotal * TAX_RATE;
+
+    //calculate the total price after tax by adding the subtotal to the tax
+    total = subTotal + tax;
 
     //----------use the follow code for output -----------------------
-    // int val1 = 20, val2 = 10;
-    // cout << left << setw(val1) << "PG&E" << setprecision(2) << right << setw(val2) << fixed << pge << endl;
+/*
+    Output:
+Sample output
 
-    // cout << left << setw(val1) << "TV and Internet" << setprecision(2) << setw(val2) << right << xfinity << endl;
-    // cout << left << setw(val1) << "Waste Management" << setprecision(2) << setw(val2) << right << garbage << endl;
-    // cout << left << setw(val1) << "Cell Devices" << setprecision(2) << setw(val2) << right << att << endl;
-    // cout << left << setw(val1) << "Water" << setprecision(2) << right << setw(val2) << water << endl;
-    // cout << right << setw(val1 + val2) << "-------------" << endl;//set this output to right, no str value on left
-    // cout << left << setw(val1) << "Total" << setprecision(2) << right << setw(val2) << total  << endl;
+QTY  Description                  Unit Price      Total Price
+120  TABLES 24 X 72 INCH             429.88         51585.60
+351  DELL ALL-IN-ONE THIN CLIENTS   1001.00        351351.00
+ 26  APPLE iMac 24-inch             1299.00         33774.00
+ 12  DELL KEYBOARD                    18.30           219.60
+  5  DELL MOUSE                       16.45            82.25                
 
+                    SUBTOTAL      430012.45
+                         TAX       39899.24
+                       TOTAL      476911.69
+    
+    */
+    int val1 = 20, val2 = 10;
+    cout << left << setw(5) << "QTY" << setprecision(2) << setw(val2) <<right << "Description" << setw(30)  << "Unit Price" << setw(val1) << fixed << "Total Price" << right  << endl;
+    cout << left << setw(5) << tabelUnits << setprecision(2) << setw(val2) <<left << "TABLES 24 X 72 INCH" << setw(22)  << tables << setw(val1) << tabelTotal   << endl;
+
+    cout << left << setw(5) << computerUnits << setprecision(2) << setw(val2) <<right << "DELL ALL-IN-ONE THIN CLIENTS" << setw(13)  << computers << setw(val1) << computerTotal   << endl;
+
+    cout << left << setw(5) << macUnits << setprecision(2) << setw(val2) <<right << "APPLE iMac 24-inch" << setw(23)  << macs << setw(val1) << macTotal  << endl;
+
+    cout << left << setw(5) << keyboardUnits << setprecision(2) << setw(val2) <<right << "DELL KEYBOARD" << setw(28)  << keyboards << setw(val1) << keyboardTotal  << endl;
+
+    cout << left << setw(5) << mouseUnits << setprecision(2) << setw(val2) <<right << "DELL MOUSE" << setw(31)  << mouses << setw(val1) << mouseTotal   << endl;
+
+    cout << endl;
+    cout << left << setw(5) << "   " << setprecision(2) << setw(val1) <<right << "SUBTOTAL" << setw(21)  << subTotal << setw(val1) << fixed << "" << right  << endl;
+    cout << left << setw(5) << "   " << setprecision(2) << setw(val1) <<right << "TAX" << setw(21)  << tax << setw(val1) << fixed << "" << right  << endl;
+    cout << left << setw(5) << "   " << setprecision(2) << setw(val1) <<right << "TOTAL" << setw(21)  << total << setw(val1) << fixed << "" << right  << endl;
     // Signature
+    cout << endl;
     cout << "Programmed by Ali Halmamat" << endl;
 
     cout << "--------------------------" << endl;
@@ -104,7 +151,45 @@ int main()
 
 /*----------------------------------------------------------------program output----------------------------------------------------------------
 
+•Test Data 1: 120, 351, 26, 12, 5
+How many 24 x 72 inch tables ordered?: 120
+How many Dell All-in-One Thin Clients ordered?: 351
+How many Apple iMac computers?: 26
+How many Dell Keyboards ordered?: 12
+How many Dell mouses ordered?: 5
+QTY  Description                    Unit Price         Total Price
+120  TABLES 24 X 72 INCH429.88                51585.60
+351  DELL ALL-IN-ONE THIN CLIENTS      1001.00           351351.00
+26   APPLE iMac 24-inch                1299.00            33774.00
+12   DELL KEYBOARD                       18.30              219.60
+5    DELL MOUSE                          16.45               82.25
 
+                 SUBTOTAL            437012.45
+                      TAX             39899.24
+                    TOTAL            476911.69
+
+Programmed by Ali Halmamat
+--------------------------
+
+•Test Data 2:  30, 45, 0, 100, 5
+How many 24 x 72 inch tables ordered?: 30
+How many Dell All-in-One Thin Clients ordered?: 45
+How many Apple iMac computers?: 0
+How many Dell Keyboards ordered?: 100
+How many Dell mouses ordered?: 5
+QTY  Description                    Unit Price         Total Price
+30   TABLES 24 X 72 INCH429.88                12896.40
+45   DELL ALL-IN-ONE THIN CLIENTS      1001.00            45045.00
+0    APPLE iMac 24-inch                1299.00                0.00
+100  DELL KEYBOARD                       18.30             1830.00
+5    DELL MOUSE                          16.45               82.25
+
+                 SUBTOTAL             59853.65
+                      TAX              5464.64
+                    TOTAL             65318.29
+
+Programmed by Ali Halmamat
+--------------------------
 
 
 
