@@ -1,0 +1,2 @@
+Sum of values: 110
+Average: 11
