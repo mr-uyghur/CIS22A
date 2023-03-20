@@ -1,0 +1,2 @@
+Sum of Values: 192
+Average: 48
