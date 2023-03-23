@@ -1,0 +1,102 @@
+State               Composite Index
+Mississippi         85
+State               Composite Index
+Hawaii              187
+State               Composite Index
+Nebraska            94
+State               Composite Index
+Tennessee           89.5
+State               Composite Index
+West Virginia       88.8
+State               Composite Index
+Indiana             91
+State               Composite Index
+California          148.4
+State               Composite Index
+New Mexico          91.1
+State               Composite Index
+South Carolina      94.2
+State               Composite Index
+Maryland            120.4
+State               Composite Index
+Arkansas            90.2
+State               Composite Index
+Minnesota           98.9
+State               Composite Index
+Louisiana           92.8
+State               Composite Index
+South Dakota        96.5
+State               Composite Index
+Nevada              104.7
+State               Composite Index
+Massachusetts       133.5
+State               Composite Index
+Maine               111.8
+State               Composite Index
+District of Columbia 152.8
+State               Composite Index
+Alabama             88
+State               Composite Index
+Utah                100.8
+State               Composite Index
+Rhode Island        114.7
+State               Composite Index
+Vermont             114.9
+State               Composite Index
+Kansas              87.9
+State               Composite Index
+Wisconsin           96.5
+State               Composite Index
+Connecticut         119.2
+State               Composite Index
+Delaware            106.2
+State               Composite Index
+New Jersey          117.8
+State               Composite Index
+Idaho               97.1
+State               Composite Index
+North Carolina      96.8
+State               Composite Index
+Georgia             89.4
+State               Composite Index
+Pennsylvania        100.3
+State               Composite Index
+Colorado            105.3
+State               Composite Index
+Montana             100.6
+State               Composite Index
+Wyoming             92.7
+State               Composite Index
+Missouri            91.3
+State               Composite Index
+Washington          113.7
+State               Composite Index
+Alaska              129
+State               Composite Index
+Iowa                90.5
+State               Composite Index
+Kentucky            92.1
+State               Composite Index
+New Hampshire       111.6
+State               Composite Index
+New York            144
+State               Composite Index
+Oregon              128.4
+State               Composite Index
+Arizona             106.6
+State               Composite Index
+Michigan            91.4
+State               Composite Index
+Illinois            90.7
+State               Composite Index
+Texas               92.3
+State               Composite Index
+Ohio                92.4
+State               Composite Index
+Florida             101.5
+State               Composite Index
+North Dakota        99.2
+State               Composite Index
+Oklahoma            88.4
+State               Composite Index
+Virginia            98.1
