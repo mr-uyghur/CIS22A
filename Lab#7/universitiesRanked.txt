@@ -1,0 +1,78 @@
+Princeton University					
+NJ	Princeton				
+41820 	8014	0.0740	0.98	0.97	16
+Harvard University 					
+MA	Cambridge					
+43938 	19882	0.0580	0.97	0.97	24
+Yale University 					
+CT	New Haven				
+45800 	12109	0.0690	0.99	0.98	53
+Columbia University 					
+NY	New York				
+51008 	23606	0.0690	0.99	0.96	10
+Stanford University 					
+CA	Stanford				
+44757 	18136	0.0570	0.98	0.96	3
+University of Chicago 					
+IL	Chicago				
+48253 	12539	0.0880	0.99	0.93	62
+Massachusetts Institute of Technology 					
+MA	Cambridge				
+45016 	11301	0.0820	0.98	0.93	25
+Duke University 					
+NC	Durham				
+47488 	15465	0.1240	0.97	0.94	32
+University of Pennsylvania 					
+PA	Philadelphia				
+47668 	21358	0.1220	0.98	0.96	17
+California Institute of Technology 					
+CA	Pasadena				
+43362 	2181	0.1060	0.97	0.93	59
+Dartmouth College 					
+NH	Hanover				
+48108 	6342	0.1040	0.98	0.95	82
+Johns Hopkins University 					
+MD	Baltimore				
+47060 	21052	0.1710	0.97	0.93	26
+Northwestern University 					
+IL	Evanston				
+47251 	20997	0.1400	0.97	0.94	42
+Washington University in St. Louis 					
+MO	St. Louis				
+46467 	14032	0.1560	0.97	0.94	63
+Cornell University 					
+NY	Ithaca				
+47286 	21593	0.1560	0.97	0.93	15
+Brown University 					
+RI	Providence				
+47434 	8943	0.0920	0.98	0.94	45
+University of Notre Dame 					
+IN	Notre Dame				
+46237 	12124	0.2230	0.98	0.95	67
+Vanderbilt University 					
+TN	Nashville				
+43838 	12757	0.1270	0.97	0.93	64
+Rice University 					
+TX	Houston				
+40566 	6628	0.1670	0.97	0.91	49
+University of California-Berkeley 					
+CA	Berkeley				
+25064 	36204	0.1770	0.97	0.91	4
+Emory University 					
+GA	Atlanta				
+45008 	14513	0.2650	0.95	0.91	101
+Georgetown University 					
+DC	Washington				
+46744 	17849	0.1710	0.96	0.92	115
+University of California-Los Angeles 					
+CA	Los Angeles				
+25064	42190	0.2040	0.97	0.90	13
+University of Virginia 					
+VA	Charlottesville				
+42184 	23464	0.3010	0.97	0.93	36
+Carnegie Mellon University 					
+PA	Pittsburgh				
+48786 	12991	0.2550	0.95	0.88	1
+University of Southern California 					
+CA	Los Angeles				
+48280 	41368	0.1980	0.97	0.91	8
